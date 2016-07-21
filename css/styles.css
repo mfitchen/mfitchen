@@ -564,38 +564,6 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.container-body {
-  width: 1200px;
-  height: auto;
-  margin: 0 auto; }
-
-.container-main {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
-  .container-main .work {
-    width: 376px;
-    margin-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .container-main .work a {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-decoration: none; }
-      .container-main .work a img {
-        width: 100%;
-        margin-bottom: 5px;
-        opacity: 1; }
-      .container-main .work a img:hover {
-        opacity: 0.85;
-        transition: opacity .3s ease-out; }
-      .container-main .work a h2 {
-        text-transform: uppercase; }
-
 .footer {
   height: 33px;
   display: flex;
@@ -611,6 +579,45 @@ body {
 
 @media only screen and (min-width: 768px) {
   .hamburger-menu {
-    display: none; } }
+    display: none; }
+
+  .container-body {
+    width: calc(100vw - 40px);
+    margin: 0 20px; }
+
+  .container-main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .container-main .work {
+      width: 31.5%;
+      margin-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .container-main .work a {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none; }
+        .container-main .work a img {
+          width: 100%;
+          margin-bottom: 5px;
+          opacity: 1; }
+        .container-main .work a img:hover {
+          opacity: 0.85;
+          transition: opacity .3s ease-out; }
+        .container-main .work a h2 {
+          text-transform: uppercase; } }
+@media only screen and (min-width: 1250px) {
+  .container-body {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto; }
+
+  .container-main .work {
+    width: 376px; } }
 
 /*# sourceMappingURL=styles.css.map */
