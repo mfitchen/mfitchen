@@ -3,7 +3,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  
+
   .hamburger-menu {
     display: none;
   }
@@ -16,19 +16,17 @@
 
 @media only screen and (min-width: 1250px) {
 
-  .container-main {
-    width: 1250px;
-  }
-
-  .main {
-    @include span-columns(12);
-  }
-
-  .work {
-    @include span-columns(3 of 12);
-    img {
-      width: 100%;
-    }
-  }
+  // .container-main {
+  //   width: 1200px;
+  //   @include span-columns(12);
+  // }
+  //
+  // .work {
+  //   @include span-columns(3 of 12);
+  //   width: 376px;
+  //   img {
+  //     width: 100%;
+  //   }
+  // }
 
 }

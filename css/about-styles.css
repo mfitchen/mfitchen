@@ -378,9 +378,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 h2 {
   font-size: 13px;
-  text-transform: uppercase;
   font-weight: lighter;
-  margin-top: 3px;
+  margin-top: 12px;
   color: #404040;
   letter-spacing: 0.06em; }
 
@@ -534,6 +533,8 @@ ul {
 .container-nav {
   height: 108px;
   width: 100%;
+  margin-top: 33px;
+  margin-bottom: 5px;
   display: flex;
   justify-content: space-between; }
   .container-nav .menu-logo {
@@ -556,7 +557,7 @@ ul {
       font-size: 12px;
       text-decoration: none;
       font-weight: lighter;
-      color: #1ec71e; }
+      color: #39b54a; }
 
 body {
   -webkit-box-sizing: border-box;
@@ -568,37 +569,49 @@ body {
   height: auto;
   margin: 0 auto; }
 
-.main {
-  width: 100%; }
+.container-main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .container-main .work {
+    width: 376px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .container-main .work a {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none; }
+      .container-main .work a img {
+        width: 100%;
+        margin-bottom: 5px;
+        opacity: 1; }
+      .container-main .work a img:hover {
+        opacity: 0.85;
+        transition: opacity .3s ease-out; }
+      .container-main .work a h2 {
+        text-transform: uppercase; }
 
-.work {
-  width: 376px;
-  margin-bottom: 18px; }
+.footer {
+  height: 33px;
+  display: flex;
+  align-items: center; }
+  .footer h2 a {
+    text-decoration: none;
+    color: #111111;
+    border-bottom: 1px solid #cdcdcd; }
+  .footer h2 a:hover {
+    text-decoration: none;
+    color: #39b54a;
+    border-bottom: 1px solid #39b54a; }
 
 @media only screen and (min-width: 768px) {
   .hamburger-menu {
     display: none; } }
-@media only screen and (min-width: 1250px) {
-  .container-main {
-    width: 1250px; }
-
-  .main {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%; }
-    .main:last-child {
-      margin-right: 0; }
-
-  .work {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 23.23176%; }
-    .work:last-child {
-      margin-right: 0; }
-    .work img {
-      width: 100%; } }
 p {
   margin-bottom: 1em; }
 
