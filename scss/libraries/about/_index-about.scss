@@ -1,0 +1,10 @@
+@import "libraries/about/about";
+@import "libraries/about/about-media-queries";
+
+%normal-p {
+  margin-bottom: 1em;
+}
+
+p {
+  @extend %normal-p;
+}
