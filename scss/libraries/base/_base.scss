@@ -1,5 +1,5 @@
 body {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: sans-serif;
   background-color: #fcfcfc;
 }
 
@@ -13,18 +13,38 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0;
 }
 
-h2 {
-  font-size: 13px;
+h1 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.8em;
   font-weight: lighter;
+  margin-bottom: 63px;
+  text-transform: uppercase;
+  color: #222222;
+  letter-spacing: 0.06em;
+}
+
+h2 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 13px;
+  font-weight: normal;
   margin-top: 12px;
   color: #404040;
   letter-spacing: 0.06em;
 }
 
-p {
-
+h3 {
+  font-size: 14px;
+  font-weight: lighter;
+  margin-top: 12px;
+  color: #575757;
+  letter-spacing: 0.06em;
 }
 
-a {
-
+p {
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: lighter;
+  margin-bottom: 30px;
+  color: #575757;
+  letter-spacing: 0.01em;
 }
