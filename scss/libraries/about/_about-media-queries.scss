@@ -1,22 +1,5 @@
 @media only screen and (min-width: 768px) {
 
-  .hamburger-menu {
-    display: none;
-  }
-
-  .menu-list {
-    display: block;
-    @include list-items(inline);
-  }
-
-  .main {
-    @include span-columns(12);
-  }
-
-  .work {
-    @include span-columns(12 of 12);
-  }
-
 }
 
 @media only screen and (min-width: 1048px) {

@@ -2,14 +2,10 @@
 
 }
 
-@media only screen and (min-width: 868px) {
-
-  .main {
-    @include span-columns(12);
-  }
-
-  .work {
-    @include span-columns(6 of 12);
+@media only screen and (min-width: 768px) {
+  
+  .hamburger-menu {
+    display: none;
   }
 
 }
@@ -18,6 +14,21 @@
 
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1250px) {
+
+  .container-main {
+    width: 1250px;
+  }
+
+  .main {
+    @include span-columns(12);
+  }
+
+  .work {
+    @include span-columns(3 of 12);
+    img {
+      width: 100%;
+    }
+  }
 
 }

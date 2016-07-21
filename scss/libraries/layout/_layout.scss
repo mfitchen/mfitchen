@@ -2,6 +2,17 @@ body {
   @include box-sizing(border-box);
 }
 
-.container-main, .main, .work {
+.container-body {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.main {
   width: 100%;
+}
+
+.work {
+  width: 376px;
+  margin-bottom: 18px;
 }
