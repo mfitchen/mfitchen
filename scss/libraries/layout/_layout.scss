@@ -1,0 +1,16 @@
+body {
+  @include box-sizing(border-box);
+}
+
+.container-main-side-nav, .container-main, .main, .story, .story-text {
+  width: 100%;
+}
+
+.story {
+  padding: 3%;
+  border-bottom: 1px solid lightgray;
+}
+
+.container-side-nav {
+  display: none;
+}

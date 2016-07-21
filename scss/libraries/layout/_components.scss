@@ -1,0 +1,53 @@
+.hover-tile-outer {
+  $base-border-color: $color-primary;
+  $base-line-height: 1.5em !default;
+  $medium-screen: 40em !default;
+  $hover-tile-height: 10em;
+  $base-spacing: 1.5em;
+
+  background: url("../img/skydive.jpg");
+  background-color: $color-secondary;
+  background-position: top;
+  background-size: cover;
+  border: 1px solid $base-border-color;
+  cursor: pointer;
+  height: $hover-tile-height;
+  margin-bottom: $base-line-height;
+
+  @include media($medium-screen) {
+    width: 100%;
+  }
+
+  .hover-tile-container {
+    height: $hover-tile-height;
+    overflow: hidden;
+  }
+
+  .hover-tile-container:hover > .hover-tile {
+    transform: translate(0, -100%);
+  }
+
+  .hover-tile {
+    background: inherit;
+    color: white;
+    height: inherit;
+    overflow: hidden;
+    padding: $base-spacing;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .hover-tile-hidden {
+    background: transparentize(#000, 0.5);
+
+    h5 {
+      line-height: $base-line-height;
+      font-weight: normal;
+      letter-spacing: 3px;
+    }
+
+    h4 {
+      margin: 0 0 0.5em 0;
+      text-shadow: 2px 2px 2px #000000;
+    }
+  }
+}

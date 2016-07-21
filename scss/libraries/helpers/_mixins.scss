@@ -1,0 +1,34 @@
+@mixin list-items($list) {
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      display: $list;
+      list-style-type: none;
+      padding-top: 2%;
+    }
+  }
+}
+
+@include list-items(inline);
+
+@mixin floating($float) {
+  .#{$float}{
+    float: $float;
+    margin-right: 20px; 
+  }
+}
+@include floating(right);
+@include floating(left);
+
+@each $color-name, $color-value in $colors {
+  .color-#{$color-name} {
+    color: $color-value;
+  }
+  .lighten-color-#{$color-name} {
+    color: tint($color-value, 60%);
+  }
+  .darken-color-#{$color-name} {
+    color: darken($color-value, 15%);
+  }
+}
